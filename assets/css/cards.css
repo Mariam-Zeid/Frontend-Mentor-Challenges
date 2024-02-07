@@ -1,0 +1,50 @@
+.challenge-img {
+  transition: all 0.5s ease;
+}
+.challenge-img:hover {
+  transform: scale(1.05);
+}
+.challenge-content {
+  padding: 2.5rem;
+}
+.challenge-heading {
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+.challenge-link:hover {
+  text-decoration: underline;
+}
+.challenge-tech {
+  font-size: 1.8rem;
+  font-weight: 800;
+}
+.html {
+  color: rgb(106, 190, 205);
+}
+.css {
+  color: rgb(62, 84, 163);
+}
+.js {
+  color: rgb(207, 99, 144);
+}
+.challenge-level {
+  font-size: 1.4rem;
+  font-weight: 900;
+  border: 1px solid var(--newbie);
+}
+.level-number {
+  color: #fff;
+}
+.newbie-color {
+  color: var(--newbie);
+}
+.newbie-bg {
+  background-color: var(--newbie);
+}
+.challenge-description {
+  color: rgb(115, 115, 115);
+  line-height: 1.5;
+  font-family: "Heebo", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
