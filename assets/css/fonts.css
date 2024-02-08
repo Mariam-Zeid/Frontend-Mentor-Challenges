@@ -13,3 +13,8 @@
   font-family: 'Outfit';
   src: url(../Fonts/Outfit/Outfit-VariableFont_wght.ttf) format('truetype');
 }
+
+@font-face {
+  font-family: 'Hanken Grotesk';
+  src: url(../Fonts/Hanken_Grotesk/HankenGrotesk-VariableFont_wght.ttf) format('truetype');
+}
