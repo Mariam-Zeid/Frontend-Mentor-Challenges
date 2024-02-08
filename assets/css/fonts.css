@@ -18,3 +18,8 @@
   font-family: 'Hanken Grotesk';
   src: url(../Fonts/Hanken_Grotesk/HankenGrotesk-VariableFont_wght.ttf) format('truetype');
 }
+
+@font-face {
+  font-family: 'Work Sans';
+  src: url(../Fonts/Work_Sans/WorkSans-VariableFont_wght.ttf) format('truetype');
+}
