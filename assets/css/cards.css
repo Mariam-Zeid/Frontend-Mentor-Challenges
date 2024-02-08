@@ -18,8 +18,9 @@
   text-decoration: underline;
 }
 .challenge-tech {
+  font-family: 'Heebo', sans-serif;
   font-size: 1.8rem;
-  font-weight: 800;
+  font-weight: 700;
 }
 .html {
   color: rgb(106, 190, 205);
