@@ -18,7 +18,7 @@
   text-decoration: underline;
 }
 .challenge-tech {
-  font-family: 'Heebo', sans-serif;
+  font-family: "Heebo", sans-serif;
   font-size: 1.8rem;
   font-weight: 700;
 }
@@ -31,10 +31,15 @@
 .js {
   color: rgb(207, 99, 144);
 }
-.challenge-level {
+.challenge-level-newbie {
   font-size: 1.4rem;
   font-weight: 900;
   border: 1px solid var(--newbie);
+}
+.challenge-level-junior {
+  font-size: 1.4rem;
+  font-weight: 900;
+  border: 1px solid var(--junior);
 }
 .level-number {
   color: #fff;
@@ -45,6 +50,13 @@
 .newbie-bg {
   background-color: var(--newbie);
 }
+.junior-bg {
+  background-color: var(--junior);
+}
+.junior-color {
+  color: var(--junior);
+}
+
 .challenge-description {
   color: rgb(115, 115, 115);
   line-height: 1.5;
