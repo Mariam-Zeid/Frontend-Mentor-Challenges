@@ -4,7 +4,7 @@ This repository contains my solutions to various Frontend Mentor challenges. Eac
 
 Frontend Mentor is a fantastic platform for developers looking to enhance their skills through real-world design challenges, and this repository reflects my journey of learning and growth.  
 
-### Visit the website here [Frontend Mentor Challenges](https://frontend-mentor-challenges-solution.netlify.app/).
+### Visit the website here [Frontend Mentor Challenges](https://fe-mentor-challenges.netlify.app/).
 
 ## 📚 Challenges Included  
 Each folder in this repository represents a specific Frontend Mentor challenge, complete with:  
