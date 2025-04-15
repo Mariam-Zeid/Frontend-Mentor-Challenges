@@ -1,22 +1,75 @@
 "use strict";
 
-$(".accordion").click(function () {
-  // Toggle 'active' class on the clicked accordion
-  $(this).toggleClass("active");
+// ? 1st way (Basic For Loop)
+/*
+var allAccordions = document.querySelectorAll(".accordion");
 
-  // Remove 'active' class from sibling accordions
+for (let i = 0; i < allAccordions.length; i++) {
+  // ! hyshof daymn akher wahed l2no laf wa khls
+  // var accordion = allAccordions[i];
+  allAccordions[i].addEventListener("click", function () {
+    var currentAccordion = allAccordions[i];
+    currentAccordion.classList.toggle("active");
+    var currentAccordionIcon =
+      currentAccordion.querySelector(".accordion-icon");
+
+    if (currentAccordion.classList.contains("active")) {
+      currentAccordionIcon.src = "assets/Images/icon-minus.svg";
+    } else {
+      currentAccordionIcon.src = "assets/Images/icon-plus.svg";
+    }
+
+    for (let i = 0; i < allAccordions.length; i++) {
+      if (allAccordions[i] !== currentAccordion) {
+        allAccordions[i].classList.remove("active");
+        var anyIcon = allAccordions[i].querySelector(".accordion-icon");
+        anyIcon.src = "assets/Images/icon-plus.svg";
+      }
+    }
+  });
+}
+*/
+
+// ? 2nd way (ForEach Loop)
+/*
+const allAccordions = document.querySelectorAll(".accordion");
+
+allAccordions.forEach((accordion) => {
+  accordion.addEventListener("click", () => {
+    accordion.classList.toggle("active");
+
+    const toggleIcon = accordion.querySelector(".accordion-icon");
+    if (accordion.classList.contains("active")) {
+      toggleIcon.src = "assets/Images/icon-minus.svg";
+    } else {
+      toggleIcon.src = "assets/Images/icon-plus.svg";
+    }
+
+    const siblings = Array.from(accordion.parentNode.children).filter(
+      (sibling) => sibling !== accordion
+    );
+    siblings.forEach((sibling) => {
+      sibling.classList.remove("active");
+      const siblingIcon = sibling.querySelector(".accordion-icon");
+      if (siblingIcon) {
+        siblingIcon.src = "assets/Images/icon-plus.svg";
+      }
+    });
+  });
+});
+*/
+
+// ? 3rd way (JQuery)
+$(".accordion").click(function () {
+  $(this).toggleClass("active");
   $(this).siblings(".accordion").removeClass("active");
   $(this)
-    .siblings(".accordion") // Select sibling accordions
-    .find(".toggle-icon") // Find toggle icons within sibling accordions
-    .attr("src", "assets/Images/icon-plus.svg"); // Change the src attribute to the plus icon
-
-  // Toggle icon source based on accordion state
+    .siblings(".accordion")
+    .find(".toggle-icon")
+    .attr("src", "assets/Images/icon-plus.svg");
   if ($(this).hasClass("active")) {
-    // If the accordion is active, change the icon to minus
     $(this).find(".toggle-icon").attr("src", "assets/Images/icon-minus.svg");
   } else {
-    // If the accordion is not active, change the icon to plus
     $(this).find(".toggle-icon").attr("src", "assets/Images/icon-plus.svg");
   }
 });
