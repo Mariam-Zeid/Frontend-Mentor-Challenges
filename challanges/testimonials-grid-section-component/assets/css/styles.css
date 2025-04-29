@@ -1,0 +1,86 @@
+/* ?============================ LAYOUT ============================ */
+
+.testimonials-wrapper {
+  margin: 2rem 1.5rem;
+  display: grid;
+  grid-template-areas:
+    "card-1"
+    "card-2"
+    "card-3"
+    "card-4"
+    "card-5";
+  gap: 1.5rem;
+}
+
+.testimonial-cell {
+  padding: 2rem 1.75rem;
+  border-radius: 0.8rem;
+  border-radius: 0.8rem;
+  padding: 2em 1.75em;
+  box-shadow: 0.3125rem 0.3125rem 0.9375rem rgba(0, 0, 0, 0.2);
+}
+.testimonial-cell:nth-child(1) {
+  grid-area: card-1;
+  background-color: var(--primary-purple-500);
+  background-image: url(../imgs/bg-pattern-quotation.svg);
+  background-repeat: no-repeat;
+  background-position: 85% 0;
+}
+.testimonial-cell:nth-child(2) {
+  grid-area: card-2;
+  background-color: var(--neutral-grey-500);
+}
+.testimonial-cell:nth-child(3) {
+  grid-area: card-3;
+  background-color: var(--neutral-white);
+  color: var(--neutral-grey-500);
+}
+.testimonial-cell:nth-child(4) {
+  grid-area: card-4;
+  background-color: var(--neutral-white);
+  color: var(--neutral-grey-500);
+}
+.testimonial-cell:nth-child(5) {
+  grid-area: card-5;
+  background-color: var(--neutral-dark-blue);
+}
+
+/* ?============================ CONTENT ============================ */
+.avatar-wrapper {
+  width: 3rem;
+  height: 3rem;
+}
+.username {
+  font-weight: 500;
+  font-size: 0.9375rem;
+}
+.user-status {
+  font-size: 0.8125rem;
+  color: var(--neutral-grey-200);
+}
+.testimonial-cell:nth-child(3) .user-status,
+.testimonial-cell:nth-child(4) .user-status {
+  color: var(--neutral-grey-300);
+}
+.main-quote {
+  font-size: 1.2188rem;
+  font-weight: 600;
+}
+.sub-quote {
+  font-size: 1rem;
+  color: var(--neutral-grey-200);
+}
+.testimonial-cell:nth-child(3) .sub-quote,
+.testimonial-cell:nth-child(4) .sub-quote {
+  color: var(--neutral-grey-300);
+}
+
+/* ?============================ FOOTER ============================ */
+.attribution {
+  font-size: 0.875rem;
+  text-align: center;
+  color: #000;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}

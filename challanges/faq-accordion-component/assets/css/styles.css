@@ -1,0 +1,49 @@
+.accordions-card {
+  max-width: 60rem;
+  background-color: var(--white);
+  box-shadow: 0.5rem 1rem 3rem hsl(224, 30%, 27%, 0.3);
+}
+.star-icon {
+  width: 7%;
+}
+.main-heading {
+  color: var(--dark-purple);
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+.accordion:not(:last-child) {
+  border-bottom: 1px solid #eee;
+}
+.accordion-question {
+  cursor: pointer;
+}
+.accordion-heading {
+  color: var(--dark-purple);
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+.accordion-icon {
+  cursor: pointer;
+}
+.accordion-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.5s ease;
+}
+.accordion-content {
+  color: hsla(288, 2%, 70%);
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+.accordion.active .accordion-answer {
+  max-height: 100px;
+}
+
+.attribution {
+  font-size: 1.4rem;
+  text-align: center;
+  color: black;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}

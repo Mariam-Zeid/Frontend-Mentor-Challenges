@@ -1,0 +1,20 @@
+@media screen and (min-width: 576px) {
+  .results-card {
+    max-width: 55rem;
+  }
+  .results-score-wrapper {
+    width: 15rem;
+  }
+  .your-score {
+    font-size: 5rem;
+  }
+  .summary-list {
+    gap: 2rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .results-card {
+    max-width: 62rem;
+  }
+}

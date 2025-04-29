@@ -1,0 +1,72 @@
+
+.card {
+  max-width: 40rem;
+  border-radius: 2rem;
+  box-shadow: 1rem 2rem 2rem hsl(208, 42%, 84%);
+}
+.card-content {
+  padding: 3.3rem;
+}
+.card-heading {
+  font-size: 2.55rem;
+  font-weight: 800;
+  font-family: "Heebo", sans-serif;
+}
+.card-description {
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-family: "Heebo", sans-serif;
+  color: rgb(111, 128, 167);
+}
+.card-plan {
+  background-color: hsl(225, 100%, 98%);
+  padding: 1.5rem;
+  align-items: center;
+  border-radius: 1rem;
+}
+.plan-type {
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+.plan-price {
+  color: rgb(111, 128, 167);
+  font-size: 1.4rem;
+  font-family: "Heebo", sans-serif;
+}
+.btn {
+  font-size: 1.6rem;
+  font-weight: 700;
+  transition: all 0.2s ease-in-out;
+}
+.change-btn {
+  background-color: transparent;
+  color: hsl(245deg, 75%, 52%);
+  text-decoration: underline;
+}
+.change-btn:hover {
+  color: hsl(245deg, 75%, 75%);
+}
+.payment-btn {
+  background-color: hsl(245deg, 75%, 52%);
+  color: hsl(225, 100%, 98%);
+  padding: 1.3rem;
+  border-radius: 1.1rem;
+}
+.payment-btn:hover {
+  background-color: hsl(245deg, 75%, 60%);
+  color: hsl(225, 100%, 98%);
+}
+.cancel-btn {
+  color: hsl(224, 23%, 55%);
+}
+.cancel-btn:hover {
+  color: #000;
+}
+
+.attribution {
+  font-size: 1.4rem;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}

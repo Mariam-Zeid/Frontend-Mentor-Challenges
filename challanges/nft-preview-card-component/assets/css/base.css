@@ -1,0 +1,12 @@
+html {
+  font-size: 62.5%;
+}
+body {
+  background-color: hsl(217, 54%, 11%);
+  font-family: "Outfit", sans-serif;
+
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  place-content: center;
+}

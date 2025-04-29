@@ -1,0 +1,18 @@
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 9px;
+  }
+}
+@media screen and (max-width: 576px) {
+  body {
+    background-image: url(../imgs/background-pattern-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  .accordions-card {
+    max-width: 42rem;
+  }
+  .accordion.active .accordion-answer {
+    max-height: 110px;
+  }
+}

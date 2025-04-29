@@ -1,0 +1,15 @@
+body {
+  font-family: "Barlow Semi Condensed", serif;
+  line-height: 1.5;
+  background-color: var(--neutral-grey-100);
+  color: #fff;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+h2, p {
+  margin: 0;
+}

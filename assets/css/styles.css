@@ -1,0 +1,101 @@
+#header {
+  background-color: var(--main-color);
+}
+#header .primary-heading {
+  font-size: 1.5rem;
+}
+
+/* ? =================== Challange Card =================== */
+.challenge-card {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  height: 100%;
+}
+
+/* ! CARD IMG */
+.challenge-img {
+  transition: all 0.5s ease;
+}
+.challenge-img:hover {
+  transform: scale(1.05);
+}
+
+/* ! CARD HEADING */
+.challenge-heading {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.challenge-heading:hover {
+  text-decoration: underline;
+}
+
+/* ! CARD TECH */
+.challenge-tech {
+  font-family: "Heebo", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+.html {
+  color: rgb(106, 190, 205);
+}
+.css {
+  color: rgb(62, 84, 163);
+}
+.js {
+  color: rgb(207, 99, 144);
+}
+
+/* ! CARD LEVEL */
+.challenge-level,
+.challange-level-wrapper {
+  font-size: 0.875rem;
+  font-weight: 700;
+  border-style: solid;
+  border-width: 1px;
+}
+.challange-level-wrapper .level-number {
+  color: #fff;
+  padding-inline: .625rem;
+}
+.challange-level-wrapper .level-type {
+  padding-inline: .625rem;
+}
+
+
+.newbie {
+  border-color: var(--newbie);
+}
+.newbie .level-number {
+  background-color: var(--newbie);
+}
+.newbie .level-type {
+  color: var(--newbie);
+}
+
+.junior {
+  border-color: var(--junior);
+}
+.junior .level-number {
+  background-color: var(--junior);
+}
+.junior .level-type {
+  color: var(--junior);
+}
+
+.intermediate {
+  border-color: var(--intermediate);
+}
+.intermediate .level-number {
+  background-color: var(--intermediate);
+}
+.intermediate .level-type {
+  color: var(--intermediate);
+}
+
+/* ! CARD DESCRIPTION */
+.challenge-description {
+  color: rgb(115, 115, 115);
+  line-height: 1.5;
+  font-family: "Heebo", sans-serif;
+  font-size: 0.9375rem;
+  font-weight: 400;
+}

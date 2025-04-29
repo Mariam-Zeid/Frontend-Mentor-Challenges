@@ -4,109 +4,62 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- ? =================== CSS File =================== -->
+    <!-- ? =================== CSS Links =================== -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
+
     <link rel="stylesheet" href="assets/css/all.css" />
 
     <title>Frontend Mentor</title>
     <link
       rel="shortcut icon"
-      href="assets/Images/favicon-32x32.png"
+      href="assets/imgs/favicon-32x32.png"
       type="image/x-icon"
     />
   </head>
-
   <body>
     <!-- ? =================== Header =================== -->
-    <header class="header text-center text-white py-4">
-      <h1>Frontend Mentor Challenges</h1>
+    <header id="header" class="text-center text-white py-3">
+      <h1 class="primary-heading">Frontend Mentor Challenges</h1>
     </header>
 
     <main class="mt-5">
-      <div class="container-lg container-fluid p-4">
-        <div class="row g-5">
-          <!-- ? =================== QR Code Component =================== -->
+      <div class="container-lg container-fluid">
+        <div class="row gy-4 gx-0 g-sm-4">
+          <!-- ? =================== Order Summary Challange =================== -->
           <div class="col-xl-4 col-sm-6">
-            <div class="challenge border rounded-4 overflow-hidden h-100">
-              <div class="challenge-img-box overflow-hidden">
-                <a href="Challenges/QR Code Component/QR_code.html">
+            <div class="challenge-card rounded-4 overflow-hidden border">
+              <div class="img-wrapper overflow-hidden">
+                <a href="challanges/order-summary-component/challenge.html">
                   <img
-                    src="assets/Images/Challenges/QR Card.jpg"
-                    alt="QR Code Challenge"
-                    class="challenge-img w-100"
-                    loading="lazy"
+                    src="assets/imgs/challanges-bgs/order-summary.jpg"
+                    alt="Order Summary Challange"
+                    class="img-fluid challenge-img"
                   />
                 </a>
               </div>
-              <div class="challenge-content p-sm-4 d-flex flex-column gap-4">
+              <div class="card-body p-4 d-flex flex-column gap-4">
                 <h2 class="challenge-heading text-capitalize">
-                  <a
-                    href="Challenges/QR Code Component/QR_code.html"
-                    class="challenge-link"
-                    >QR code component</a
+                  <a href="challanges/order-summary-component/challenge.html"
+                    >order summary component</a
                   >
                 </h2>
                 <div
-                  class="details d-flex align-content-center justify-content-between"
+                  class="challange-details d-flex align-items-center justify-content-between"
                 >
-                  <div class="technologies-wrapper d-flex gap-3">
+                  <div class="challange-technologies-wrapper d-flex gap-2">
                     <p class="text-uppercase challenge-tech html">html</p>
                     <p class="text-uppercase challenge-tech css">css</p>
                   </div>
                   <div
-                    class="challenge-level-newbie align-self-center rounded-3 overflow-hidden"
+                    class="newbie challange-level-wrapper rounded-2 d-flex align-items-center overflow-hidden"
                   >
-                    <span class="level-number newbie-bg p-3">1</span>
-                    <span
-                      class="level-word text-uppercase ms-auto newbie-color p-2"
-                      >newbie</span
-                    >
-                  </div>
-                </div>
-                <p class="challenge-description">
-                  A perfect first challenge if you're new to HTML and CSS. The
-                  card layout doesn't shift, so it's ideal if you haven't
-                  learned about building responsive layouts yet.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- ? =================== Order Summary Component =================== -->
-          <div class="col-xl-4 col-sm-6">
-            <div class="challenge border rounded-4 overflow-hidden h-100">
-              <div class="challenge-img-box overflow-hidden">
-                <a href="Challenges/Order Summary Component/Order_Summary.html">
-                  <img
-                    src="assets/Images/Challenges/Order Summary.jpg"
-                    alt="Order Summary Challenge"
-                    class="challenge-img w-100"
-                    loading="lazy"
-                  />
-                </a>
-              </div>
-              <div class="challenge-content p-sm-4 d-flex flex-column gap-4">
-                <h2 class="challenge-heading text-capitalize">
-                  <a
-                    href="Challenges/Order Summary Component/Order_Summary.html"
-                    class="challenge-link"
-                    >Order Summary component</a
-                  >
-                </h2>
-                <div
-                  class="details d-flex align-content-center justify-content-between"
-                >
-                  <div class="technologies-wrapper d-flex gap-3">
-                    <p class="text-uppercase challenge-tech html">html</p>
-                    <p class="text-uppercase challenge-tech css">css</p>
-                  </div>
-                  <div
-                    class="challenge-level-newbie align-self-center rounded-3 overflow-hidden"
-                  >
-                    <span class="level-number newbie-bg p-3">1</span>
-                    <span
-                      class="level-word text-uppercase ms-auto newbie-color p-2"
-                      >newbie</span
-                    >
+                    <p class="level-number newbie-bg">1</p>
+                    <p class="level-type text-uppercase">newbie</p>
                   </div>
                 </div>
                 <p class="challenge-description">
@@ -117,45 +70,36 @@
             </div>
           </div>
 
-          <!-- ? =================== NFT Preview Component =================== -->
+          <!-- ? =================== NFT Preview Challange =================== -->
           <div class="col-xl-4 col-sm-6">
-            <div class="challenge border rounded-4 overflow-hidden h-100">
-              <div class="challenge-img-box overflow-hidden">
-                <a
-                  href="Challenges/NFT Preview Card Component/NFT_preview.html"
-                >
+            <div class="challenge-card rounded-4 overflow-hidden border">
+              <div class="img-wrapper overflow-hidden">
+                <a href="challanges/nft-preview-card-component/challenge.html">
                   <img
-                    src="assets/Images/Challenges/NFT Preview Card.jpg"
-                    alt="NFT Preview Challenge"
-                    class="challenge-img w-100"
-                    loading="lazy"
+                    src="assets/imgs/challanges-bgs/nft-preview.jpg"
+                    alt="NFT Preview Challange"
+                    class="img-fluid challenge-img"
                   />
                 </a>
               </div>
-              <div class="challenge-content p-sm-4 d-flex flex-column gap-4">
+              <div class="card-body p-4 d-flex flex-column gap-4">
                 <h2 class="challenge-heading text-capitalize">
-                  <a
-                    href="Challenges/NFT Preview Card Component/NFT_preview.html"
-                    class="challenge-link"
+                  <a href="challanges/nft-preview-card-component/challenge.html"
+                    >nft preview card component</a
                   >
-                    NFT preview card component
-                  </a>
                 </h2>
                 <div
-                  class="details d-flex align-content-center justify-content-between"
+                  class="challange-details d-flex align-items-center justify-content-between"
                 >
-                  <div class="technologies-wrapper d-flex gap-3">
+                  <div class="challange-technologies-wrapper d-flex gap-2">
                     <p class="text-uppercase challenge-tech html">html</p>
                     <p class="text-uppercase challenge-tech css">css</p>
                   </div>
                   <div
-                    class="challenge-level-newbie align-self-center rounded-3 overflow-hidden"
+                    class="newbie challange-level-wrapper rounded-2 d-flex align-items-center overflow-hidden"
                   >
-                    <span class="level-number newbie-bg p-3">1</span>
-                    <span
-                      class="level-word text-uppercase ms-auto newbie-color p-2"
-                      >newbie</span
-                    >
+                    <p class="level-number newbie-bg">1</p>
+                    <p class="level-type text-uppercase">newbie</p>
                   </div>
                 </div>
                 <p class="challenge-description">
@@ -167,51 +111,42 @@
             </div>
           </div>
 
-          <!-- ? =================== Results Summary Component =================== -->
+          <!-- ? =================== Results Summary Challange =================== -->
           <div class="col-xl-4 col-sm-6">
-            <div class="challenge border rounded-4 overflow-hidden h-100">
-              <div class="challenge-img-box overflow-hidden">
-                <a
-                  href="Challenges/Results Summary Component/results_summary.html"
-                >
+            <div class="challenge-card rounded-4 overflow-hidden border">
+              <div class="img-wrapper overflow-hidden">
+                <a href="challanges/results-summary-component/challenge.html">
                   <img
-                    src="assets/Images/Challenges/Results Summary.jpeg"
-                    alt="Result Summary Challenge"
-                    class="challenge-img w-100"
-                    loading="lazy"
+                    src="assets/imgs/challanges-bgs/results-summary.jpeg"
+                    alt="Results Summary Challange"
+                    class="img-fluid challenge-img"
                   />
                 </a>
               </div>
-              <div class="challenge-content p-sm-4 d-flex flex-column gap-4">
+              <div class="card-body p-4 d-flex flex-column gap-4">
                 <h2 class="challenge-heading text-capitalize">
-                  <a
-                    href="Challenges/Results Summary Component/results_summary.html"
-                    class="challenge-link"
+                  <a href="challanges/results-summary-component/challenge.html"
+                    >results summary component</a
                   >
-                    Results Summary component
-                  </a>
                 </h2>
                 <div
-                  class="details d-flex align-content-center justify-content-between"
+                  class="challange-details d-flex align-items-center justify-content-between"
                 >
-                  <div class="technologies-wrapper d-flex gap-3">
+                  <div class="challange-technologies-wrapper d-flex gap-2">
                     <p class="text-uppercase challenge-tech html">html</p>
                     <p class="text-uppercase challenge-tech css">css</p>
                   </div>
                   <div
-                    class="challenge-level-newbie align-self-center rounded-3 overflow-hidden"
+                    class="newbie challange-level-wrapper rounded-2 d-flex align-items-center overflow-hidden"
                   >
-                    <span class="level-number newbie-bg p-3">1</span>
-                    <span
-                      class="level-word text-uppercase ms-auto newbie-color p-2"
-                      >newbie</span
-                    >
+                    <p class="level-number newbie-bg">1</p>
+                    <p class="level-type text-uppercase">newbie</p>
                   </div>
                 </div>
                 <p class="challenge-description">
-                  This challenge has something for everyone. It’s a HTML and CSS
-                  only project, but we’ve also provided a JSON file of the test
-                  results for anyone wanting to practice JS.
+                  This HTML & CSS only challenge is perfect for anyone just
+                  starting out or anyone wanting a small project to play around
+                  with.
                 </p>
               </div>
             </div>
@@ -219,43 +154,37 @@
 
           <!-- ? =================== Social Proof Section Component =================== -->
           <div class="col-xl-4 col-sm-6">
-            <div class="challenge border rounded-4 overflow-hidden h-100">
-              <div class="challenge-img-box overflow-hidden">
+            <div class="challenge-card rounded-4 overflow-hidden border">
+              <div class="img-wrapper overflow-hidden">
                 <a
-                  href="Challenges/Social Proof Section Component/social_proof.html"
+                  href="challanges/social-proof-section-component/challenge.html"
                 >
                   <img
-                    src="assets/Images/Challenges/Social Proof Section.jpg"
-                    alt="Social Proof Section Challenge"
-                    class="challenge-img w-100"
-                    loading="lazy"
+                    src="assets/imgs/challanges-bgs/social-proof-section.jpg"
+                    alt="Social Proof Section Challange"
+                    class="img-fluid challenge-img"
                   />
                 </a>
               </div>
-              <div class="challenge-content p-sm-4 d-flex flex-column gap-4">
+              <div class="card-body p-4 d-flex flex-column gap-4">
                 <h2 class="challenge-heading text-capitalize">
                   <a
-                    href="Challenges/Social Proof Section Component/social_proof.html"
-                    class="challenge-link"
+                    href="challanges/social-proof-section-component/challenge.html"
+                    >social proof section</a
                   >
-                    Social Proof Section
-                  </a>
                 </h2>
                 <div
-                  class="details d-flex align-content-center justify-content-between"
+                  class="challange-details d-flex align-items-center justify-content-between"
                 >
-                  <div class="technologies-wrapper d-flex gap-3">
+                  <div class="challange-technologies-wrapper d-flex gap-2">
                     <p class="text-uppercase challenge-tech html">html</p>
                     <p class="text-uppercase challenge-tech css">css</p>
                   </div>
                   <div
-                    class="challenge-level-newbie align-self-center rounded-3 overflow-hidden"
+                    class="newbie challange-level-wrapper rounded-2 d-flex align-items-center overflow-hidden"
                   >
-                    <span class="level-number newbie-bg p-3">1</span>
-                    <span
-                      class="level-word text-uppercase ms-auto newbie-color p-2"
-                      >newbie</span
-                    >
+                    <p class="level-number newbie-bg">1</p>
+                    <p class="level-type text-uppercase">newbie</p>
                   </div>
                 </div>
                 <p class="challenge-description">
@@ -269,43 +198,37 @@
 
           <!-- ? =================== Testimonials Grid Section Component =================== -->
           <div class="col-xl-4 col-sm-6">
-            <div class="challenge border rounded-4 overflow-hidden h-100">
-              <div class="challenge-img-box overflow-hidden">
+            <div class="challenge-card rounded-4 overflow-hidden border">
+              <div class="img-wrapper overflow-hidden">
                 <a
-                  href="Challenges/Testimonials Grid Section Component/testimonials_grid.html"
+                  href="challanges/testimonials-grid-section-component/challenge.html"
                 >
                   <img
-                    src="assets/Images/Challenges/Testimonials Grid Section.jpg"
-                    alt="Social Proof Section Challenge"
-                    class="challenge-img w-100"
-                    loading="lazy"
+                    src="assets/imgs/challanges-bgs/testimonials-grid-section.jpg"
+                    alt="Testimonials Grid Section Challange"
+                    class="img-fluid challenge-img"
                   />
                 </a>
               </div>
-              <div class="challenge-content p-sm-4 d-flex flex-column gap-4">
+              <div class="card-body p-4 d-flex flex-column gap-4">
                 <h2 class="challenge-heading text-capitalize">
                   <a
-                    href="Challenges/Testimonials Grid Section Component/testimonials_grid.html"
-                    class="challenge-link"
+                    href="challanges/testimonials-grid-section-component/challenge.html"
+                    >testimonials grid section</a
                   >
-                    Testimonials Grid Section
-                  </a>
                 </h2>
                 <div
-                  class="details d-flex align-content-center justify-content-between"
+                  class="challange-details d-flex align-items-center justify-content-between"
                 >
-                  <div class="technologies-wrapper d-flex gap-3">
+                  <div class="challange-technologies-wrapper d-flex gap-2">
                     <p class="text-uppercase challenge-tech html">html</p>
                     <p class="text-uppercase challenge-tech css">css</p>
                   </div>
                   <div
-                    class="challenge-level-junior align-self-center rounded-3 overflow-hidden"
+                    class="junior challange-level-wrapper rounded-2 d-flex align-items-center overflow-hidden"
                   >
-                    <span class="level-number junior-bg p-3">2</span>
-                    <span
-                      class="level-word text-uppercase ms-auto junior-color p-2"
-                      >junior</span
-                    >
+                    <p class="level-number junior-bg">2</p>
+                    <p class="level-type text-uppercase">junior</p>
                   </div>
                 </div>
                 <p class="challenge-description">
@@ -319,48 +242,44 @@
 
           <!-- ? =================== FAQ Accordion Component =================== -->
           <div class="col-xl-4 col-sm-6">
-            <div class="challenge border rounded-4 overflow-hidden h-100">
-              <div class="challenge-img-box overflow-hidden">
-                <a href="Challenges/FAQ Accordion Component/FAQ_Accordion.html">
+            <div class="challenge-card rounded-4 overflow-hidden border">
+              <div class="img-wrapper overflow-hidden">
+                <a
+                  href="challanges/faq-accordion-component/challenge.html"
+                >
                   <img
-                    src="assets/Images/Challenges/FAQ Accordion.jpg"
-                    alt="FAQ Accordion Challenge"
-                    class="challenge-img w-100"
-                    loading="lazy"
+                    src="assets/imgs/challanges-bgs/faq-accordion.jpg"
+                    alt="FAQ Accordion Challange"
+                    class="img-fluid challenge-img"
                   />
                 </a>
               </div>
-              <div class="challenge-content p-sm-4 d-flex flex-column gap-4">
+              <div class="card-body p-4 d-flex flex-column gap-4">
                 <h2 class="challenge-heading text-capitalize">
                   <a
-                    href="Challenges/FAQ Accordion Component/FAQ_Accordion.html"
-                    class="challenge-link"
+                    href="challanges/faq-accordion-component/challenge.html"
+                    >FAQ Accordion</a
                   >
-                    FAQ accordion
-                  </a>
                 </h2>
                 <div
-                  class="details d-flex align-content-center justify-content-between"
+                  class="challange-details d-flex align-items-center justify-content-between"
                 >
-                  <div class="technologies-wrapper d-flex gap-3">
+                  <div class="challange-technologies-wrapper d-flex gap-2">
                     <p class="text-uppercase challenge-tech html">html</p>
                     <p class="text-uppercase challenge-tech css">css</p>
                     <p class="text-uppercase challenge-tech js">js</p>
                   </div>
                   <div
-                    class="challenge-level-newbie align-self-center rounded-3 overflow-hidden"
+                    class="newbie challange-level-wrapper rounded-2 d-flex align-items-center overflow-hidden"
                   >
-                    <span class="level-number newbie-bg p-3">1</span>
-                    <span
-                      class="level-word text-uppercase ms-auto newbie-color p-2"
-                      >newbie</span
-                    >
+                    <p class="level-number newbie-bg">1</p>
+                    <p class="level-type text-uppercase">newbie</p>
                   </div>
                 </div>
                 <p class="challenge-description">
-                  In this challenge, you'll build an FAQ accordion. This is an
-                  extremely common front-end pattern, so it's an excellent
-                  opportunity to get some practice in!
+                  This challenge will be perfect practice for anyone wanting to
+                  test their CSS Grid skills. Grid is such a powerful addition
+                  to CSS, so it's worth getting to grips with it!
                 </p>
               </div>
             </div>
